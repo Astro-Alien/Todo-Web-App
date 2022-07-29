@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h2>
+            <a href="index.html"><img src="assets/images/Logo-bg.png" alt="Logo" /></a>
+        </h2>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="card r">
+                <div class="card-header ">
+                    <h1>What do you have planned?</h1>
+                </div>
+                <div class="card-body section-1">
+                    <form id="newtodoform">
+                        <input type="text" name="content" id="content" placeholder="e.g. create to do list app" />
+
+                        <h4>Choose task priority</h4>
+                        <div class="options">
+
+                            <label>
+        
+                                <input type="radio" name="category" id="category1" value="business">
+                                <span class="bubble business"></span>
+                                <div style="color: white; font-size: bold;">Important</div>
+        
+                            </label>
+                            <label>
+        
+                                <input type="radio" name="category" id="category2" value="personal">
+                                <span class="bubble personal"></span>
+                                <div style="color: white; font-size: bold;">Personal</div>
+        
+                            </label>
+
+                        </div>
+
+                        <input type="submit" value="Add Task" id="sub" />
+
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="card h">
+                <div class="card-header">
+                    <h1>Todo List</h1>
+                </div>
+                <div class="card-body">
+                    <div class="grid-item todo-list">
+
+
+                        <div class="list" id="todo-list">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">© 2022 by Charles Lemmert</footer>
+    <script src="assets/scripts/functionality.js"></script>
+</body>
+
+</html>
